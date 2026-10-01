@@ -1,0 +1,1041 @@
+{
+  "seed": 42,
+  "data_source": {
+    "name": "TidyTuesday 2021-04-20 netflix_titles (Flixable / Kaggle Netflix Movies and TV Shows)",
+    "url": "https://github.com/rfordatascience/tidytuesday/tree/master/data/2021/2021-04-20",
+    "raw_csv": "data/raw/netflix_titles.csv",
+    "n_rows_clean": 7787
+  },
+  "analysis": {
+    "kpis": {
+      "n_titles": 7787,
+      "n_movies": 5377,
+      "n_tv": 2410,
+      "year_added_min": 2008,
+      "year_added_max": 2021,
+      "release_year_min": 1925,
+      "release_year_max": 2021,
+      "pct_with_country": 0.9348914858096828,
+      "pct_with_director": 0.6932066264286632,
+      "pct_rated": 0.9991010658790291,
+      "pct_rating_band": 0.9991010658790291
+    },
+    "missingness": [
+      {
+        "column": "n_seasons",
+        "missing_pct": 69.05098240657506
+      },
+      {
+        "column": "tv_seasons",
+        "missing_pct": 69.05098240657506
+      },
+      {
+        "column": "duration_minutes",
+        "missing_pct": 30.949017593424937
+      },
+      {
+        "column": "movie_minutes",
+        "missing_pct": 30.949017593424937
+      },
+      {
+        "column": "director",
+        "missing_pct": 30.679337357133683
+      },
+      {
+        "column": "cast",
+        "missing_pct": 9.220495697958135
+      },
+      {
+        "column": "country",
+        "missing_pct": 6.51085141903172
+      },
+      {
+        "column": "primary_country",
+        "missing_pct": 6.51085141903172
+      },
+      {
+        "column": "month_added",
+        "missing_pct": 1.2585077693591884
+      },
+      {
+        "column": "date_added",
+        "missing_pct": 1.2585077693591884
+      },
+      {
+        "column": "year_added",
+        "missing_pct": 1.2585077693591884
+      },
+      {
+        "column": "rating",
+        "missing_pct": 0.08989341209708489
+      },
+      {
+        "column": "rating_band",
+        "missing_pct": 0.08989341209708489
+      }
+    ],
+    "type_mix": [
+      {
+        "type": "Movie",
+        "count": 5377,
+        "share": 0.6905098240657506
+      },
+      {
+        "type": "TV Show",
+        "count": 2410,
+        "share": 0.3094901759342494
+      }
+    ],
+    "rating_band_mix": [
+      {
+        "rating_band": "Mature",
+        "count": 3620,
+        "share": 0.4652956298200514
+      },
+      {
+        "rating_band": "Teens",
+        "count": 3370,
+        "share": 0.43316195372750643
+      },
+      {
+        "rating_band": "Kids",
+        "count": 790,
+        "share": 0.10154241645244216
+      }
+    ],
+    "top_countries": [
+      {
+        "country": "United States",
+        "count": 3297
+      },
+      {
+        "country": "India",
+        "count": 990
+      },
+      {
+        "country": "United Kingdom",
+        "count": 723
+      },
+      {
+        "country": "Canada",
+        "count": 412
+      },
+      {
+        "country": "France",
+        "count": 349
+      },
+      {
+        "country": "Japan",
+        "count": 287
+      },
+      {
+        "country": "Spain",
+        "count": 215
+      },
+      {
+        "country": "South Korea",
+        "count": 212
+      },
+      {
+        "country": "Germany",
+        "count": 199
+      },
+      {
+        "country": "Mexico",
+        "count": 154
+      }
+    ],
+    "top_genres": [
+      {
+        "genre": "International Movies",
+        "count": 2437
+      },
+      {
+        "genre": "Dramas",
+        "count": 2106
+      },
+      {
+        "genre": "Comedies",
+        "count": 1471
+      },
+      {
+        "genre": "International TV Shows",
+        "count": 1199
+      },
+      {
+        "genre": "Documentaries",
+        "count": 786
+      },
+      {
+        "genre": "Action & Adventure",
+        "count": 721
+      },
+      {
+        "genre": "TV Dramas",
+        "count": 704
+      },
+      {
+        "genre": "Independent Movies",
+        "count": 673
+      },
+      {
+        "genre": "Children & Family Movies",
+        "count": 532
+      },
+      {
+        "genre": "Romantic Movies",
+        "count": 531
+      },
+      {
+        "genre": "TV Comedies",
+        "count": 525
+      },
+      {
+        "genre": "Thrillers",
+        "count": 491
+      }
+    ],
+    "movie_duration": {
+      "count": 5377.0,
+      "mean": 99.30797842663195,
+      "std": 28.53088078610757,
+      "min": 3.0,
+      "25%": 86.0,
+      "50%": 98.0,
+      "75%": 114.0,
+      "max": 312.0
+    },
+    "tv_seasons_head": [
+      {
+        "seasons": 1.0,
+        "count": 1608
+      },
+      {
+        "seasons": 2.0,
+        "count": 382
+      },
+      {
+        "seasons": 3.0,
+        "count": 184
+      },
+      {
+        "seasons": 4.0,
+        "count": 87
+      },
+      {
+        "seasons": 5.0,
+        "count": 58
+      },
+      {
+        "seasons": 6.0,
+        "count": 30
+      },
+      {
+        "seasons": 7.0,
+        "count": 19
+      },
+      {
+        "seasons": 8.0,
+        "count": 18
+      },
+      {
+        "seasons": 9.0,
+        "count": 8
+      },
+      {
+        "seasons": 10.0,
+        "count": 6
+      }
+    ],
+    "release_year": {
+      "describe": {
+        "count": 7787.0,
+        "mean": 2013.932579940927,
+        "std": 8.757394618381273,
+        "min": 1925.0,
+        "25%": 2013.0,
+        "50%": 2017.0,
+        "75%": 2018.0,
+        "max": 2021.0
+      },
+      "share_since_year_min": 0.9848465391036343,
+      "year_min_focus": 1980,
+      "n_recent": 7669
+    },
+    "movie_year_duration_corr": {
+      "corr": -0.24066672646878798,
+      "n": 5331
+    },
+    "titles_added_tail": [
+      {
+        "month": "2020-02",
+        "all": 117,
+        "Movie": 71,
+        "TV Show": 46
+      },
+      {
+        "month": "2020-03",
+        "all": 152,
+        "Movie": 96,
+        "TV Show": 56
+      },
+      {
+        "month": "2020-04",
+        "all": 188,
+        "Movie": 130,
+        "TV Show": 58
+      },
+      {
+        "month": "2020-05",
+        "all": 173,
+        "Movie": 109,
+        "TV Show": 64
+      },
+      {
+        "month": "2020-06",
+        "all": 167,
+        "Movie": 119,
+        "TV Show": 48
+      },
+      {
+        "month": "2020-07",
+        "all": 156,
+        "Movie": 103,
+        "TV Show": 53
+      },
+      {
+        "month": "2020-08",
+        "all": 144,
+        "Movie": 83,
+        "TV Show": 61
+      },
+      {
+        "month": "2020-09",
+        "all": 178,
+        "Movie": 116,
+        "TV Show": 62
+      },
+      {
+        "month": "2020-10",
+        "all": 173,
+        "Movie": 117,
+        "TV Show": 56
+      },
+      {
+        "month": "2020-11",
+        "all": 158,
+        "Movie": 103,
+        "TV Show": 55
+      },
+      {
+        "month": "2020-12",
+        "all": 175,
+        "Movie": 101,
+        "TV Show": 74
+      },
+      {
+        "month": "2021-01",
+        "all": 117,
+        "Movie": 88,
+        "TV Show": 29
+      }
+    ],
+    "genre_trends": [
+      {
+        "year_added": 2008.0,
+        "genre": "Dramas",
+        "count": 1,
+        "year_total": 4,
+        "share": 0.25
+      },
+      {
+        "year_added": 2009.0,
+        "genre": "Dramas",
+        "count": 1,
+        "year_total": 3,
+        "share": 0.3333333333333333
+      },
+      {
+        "year_added": 2009.0,
+        "genre": "International Movies",
+        "count": 1,
+        "year_total": 3,
+        "share": 0.3333333333333333
+      },
+      {
+        "year_added": 2011.0,
+        "genre": "Dramas",
+        "count": 13,
+        "year_total": 19,
+        "share": 0.6842105263157895
+      },
+      {
+        "year_added": 2011.0,
+        "genre": "International Movies",
+        "count": 1,
+        "year_total": 19,
+        "share": 0.05263157894736842
+      },
+      {
+        "year_added": 2012.0,
+        "genre": "Comedies",
+        "count": 2,
+        "year_total": 4,
+        "share": 0.5
+      },
+      {
+        "year_added": 2012.0,
+        "genre": "Documentaries",
+        "count": 1,
+        "year_total": 4,
+        "share": 0.25
+      },
+      {
+        "year_added": 2013.0,
+        "genre": "Comedies",
+        "count": 1,
+        "year_total": 21,
+        "share": 0.047619047619047616
+      },
+      {
+        "year_added": 2013.0,
+        "genre": "Documentaries",
+        "count": 1,
+        "year_total": 21,
+        "share": 0.047619047619047616
+      },
+      {
+        "year_added": 2013.0,
+        "genre": "International TV Shows",
+        "count": 1,
+        "year_total": 21,
+        "share": 0.047619047619047616
+      },
+      {
+        "year_added": 2014.0,
+        "genre": "Action & Adventure",
+        "count": 1,
+        "year_total": 35,
+        "share": 0.02857142857142857
+      },
+      {
+        "year_added": 2014.0,
+        "genre": "Comedies",
+        "count": 2,
+        "year_total": 35,
+        "share": 0.05714285714285714
+      },
+      {
+        "year_added": 2014.0,
+        "genre": "Documentaries",
+        "count": 8,
+        "year_total": 35,
+        "share": 0.22857142857142856
+      },
+      {
+        "year_added": 2014.0,
+        "genre": "International Movies",
+        "count": 2,
+        "year_total": 35,
+        "share": 0.05714285714285714
+      },
+      {
+        "year_added": 2015.0,
+        "genre": "Action & Adventure",
+        "count": 2,
+        "year_total": 145,
+        "share": 0.013793103448275862
+      },
+      {
+        "year_added": 2015.0,
+        "genre": "Comedies",
+        "count": 12,
+        "year_total": 145,
+        "share": 0.08275862068965517
+      },
+      {
+        "year_added": 2015.0,
+        "genre": "Documentaries",
+        "count": 13,
+        "year_total": 145,
+        "share": 0.0896551724137931
+      },
+      {
+        "year_added": 2015.0,
+        "genre": "Dramas",
+        "count": 12,
+        "year_total": 145,
+        "share": 0.08275862068965517
+      },
+      {
+        "year_added": 2015.0,
+        "genre": "International Movies",
+        "count": 10,
+        "year_total": 145,
+        "share": 0.06896551724137931
+      },
+      {
+        "year_added": 2015.0,
+        "genre": "International TV Shows",
+        "count": 3,
+        "year_total": 145,
+        "share": 0.020689655172413793
+      },
+      {
+        "year_added": 2016.0,
+        "genre": "Action & Adventure",
+        "count": 20,
+        "year_total": 870,
+        "share": 0.022988505747126436
+      },
+      {
+        "year_added": 2016.0,
+        "genre": "Comedies",
+        "count": 49,
+        "year_total": 870,
+        "share": 0.05632183908045977
+      },
+      {
+        "year_added": 2016.0,
+        "genre": "Documentaries",
+        "count": 69,
+        "year_total": 870,
+        "share": 0.07931034482758621
+      },
+      {
+        "year_added": 2016.0,
+        "genre": "Dramas",
+        "count": 67,
+        "year_total": 870,
+        "share": 0.07701149425287357
+      },
+      {
+        "year_added": 2016.0,
+        "genre": "International Movies",
+        "count": 85,
+        "year_total": 870,
+        "share": 0.09770114942528736
+      },
+      {
+        "year_added": 2016.0,
+        "genre": "International TV Shows",
+        "count": 89,
+        "year_total": 870,
+        "share": 0.10229885057471265
+      },
+      {
+        "year_added": 2017.0,
+        "genre": "Action & Adventure",
+        "count": 106,
+        "year_total": 2623,
+        "share": 0.040411742279832255
+      },
+      {
+        "year_added": 2017.0,
+        "genre": "Comedies",
+        "count": 191,
+        "year_total": 2623,
+        "share": 0.07281738467403737
+      },
+      {
+        "year_added": 2017.0,
+        "genre": "Documentaries",
+        "count": 206,
+        "year_total": 2623,
+        "share": 0.07853602744948532
+      },
+      {
+        "year_added": 2017.0,
+        "genre": "Dramas",
+        "count": 297,
+        "year_total": 2623,
+        "share": 0.11322912695386962
+      },
+      {
+        "year_added": 2017.0,
+        "genre": "International Movies",
+        "count": 418,
+        "year_total": 2623,
+        "share": 0.15935951200914983
+      },
+      {
+        "year_added": 2017.0,
+        "genre": "International TV Shows",
+        "count": 198,
+        "year_total": 2623,
+        "share": 0.07548608463591308
+      },
+      {
+        "year_added": 2018.0,
+        "genre": "Action & Adventure",
+        "count": 178,
+        "year_total": 3699,
+        "share": 0.048121113814544474
+      },
+      {
+        "year_added": 2018.0,
+        "genre": "Comedies",
+        "count": 301,
+        "year_total": 3699,
+        "share": 0.08137334414706678
+      },
+      {
+        "year_added": 2018.0,
+        "genre": "Documentaries",
+        "count": 170,
+        "year_total": 3699,
+        "share": 0.04595836712625034
+      },
+      {
+        "year_added": 2018.0,
+        "genre": "Dramas",
+        "count": 534,
+        "year_total": 3699,
+        "share": 0.14436334144363341
+      },
+      {
+        "year_added": 2018.0,
+        "genre": "International Movies",
+        "count": 677,
+        "year_total": 3699,
+        "share": 0.18302243849689104
+      },
+      {
+        "year_added": 2018.0,
+        "genre": "International TV Shows",
+        "count": 218,
+        "year_total": 3699,
+        "share": 0.05893484725601514
+      },
+      {
+        "year_added": 2019.0,
+        "genre": "Action & Adventure",
+        "count": 222,
+        "year_total": 4784,
+        "share": 0.04640468227424749
+      },
+      {
+        "year_added": 2019.0,
+        "genre": "Comedies",
+        "count": 452,
+        "year_total": 4784,
+        "share": 0.09448160535117058
+      },
+      {
+        "year_added": 2019.0,
+        "genre": "Documentaries",
+        "count": 189,
+        "year_total": 4784,
+        "share": 0.039506688963210704
+      },
+      {
+        "year_added": 2019.0,
+        "genre": "Dramas",
+        "count": 596,
+        "year_total": 4784,
+        "share": 0.1245819397993311
+      },
+      {
+        "year_added": 2019.0,
+        "genre": "International Movies",
+        "count": 641,
+        "year_total": 4784,
+        "share": 0.13398829431438128
+      },
+      {
+        "year_added": 2019.0,
+        "genre": "International TV Shows",
+        "count": 355,
+        "year_total": 4784,
+        "share": 0.0742056856187291
+      },
+      {
+        "year_added": 2020.0,
+        "genre": "Action & Adventure",
+        "count": 176,
+        "year_total": 4414,
+        "share": 0.03987313094698686
+      },
+      {
+        "year_added": 2020.0,
+        "genre": "Comedies",
+        "count": 424,
+        "year_total": 4414,
+        "share": 0.09605799728137744
+      },
+      {
+        "year_added": 2020.0,
+        "genre": "Documentaries",
+        "count": 120,
+        "year_total": 4414,
+        "share": 0.02718622564567286
+      },
+      {
+        "year_added": 2020.0,
+        "genre": "Dramas",
+        "count": 547,
+        "year_total": 4414,
+        "share": 0.12392387856819212
+      },
+      {
+        "year_added": 2020.0,
+        "genre": "International Movies",
+        "count": 578,
+        "year_total": 4414,
+        "share": 0.13094698685999093
+      },
+      {
+        "year_added": 2020.0,
+        "genre": "International TV Shows",
+        "count": 306,
+        "year_total": 4414,
+        "share": 0.06932487539646578
+      },
+      {
+        "year_added": 2021.0,
+        "genre": "Action & Adventure",
+        "count": 16,
+        "year_total": 245,
+        "share": 0.0653061224489796
+      },
+      {
+        "year_added": 2021.0,
+        "genre": "Comedies",
+        "count": 37,
+        "year_total": 245,
+        "share": 0.1510204081632653
+      },
+      {
+        "year_added": 2021.0,
+        "genre": "Documentaries",
+        "count": 9,
+        "year_total": 245,
+        "share": 0.036734693877551024
+      },
+      {
+        "year_added": 2021.0,
+        "genre": "Dramas",
+        "count": 38,
+        "year_total": 245,
+        "share": 0.15510204081632653
+      },
+      {
+        "year_added": 2021.0,
+        "genre": "International Movies",
+        "count": 24,
+        "year_total": 245,
+        "share": 0.09795918367346938
+      },
+      {
+        "year_added": 2021.0,
+        "genre": "International TV Shows",
+        "count": 6,
+        "year_total": 245,
+        "share": 0.024489795918367346
+      }
+    ]
+  },
+  "model": {
+    "n_train": 5835,
+    "n_test": 1945,
+    "class_counts_train": {
+      "Mature": 2715,
+      "Teens": 2528,
+      "Kids": 592
+    },
+    "class_counts_test": {
+      "Mature": 905,
+      "Teens": 842,
+      "Kids": 198
+    },
+    "baseline": {
+      "name": "majority_class",
+      "accuracy": 0.4652956298200514,
+      "macro_f1": 0.21169590643274852,
+      "predicted_class": "Mature"
+    },
+    "model": {
+      "name": "random_forest",
+      "accuracy": 0.6920308483290488,
+      "macro_f1": 0.7195160948396646,
+      "weighted_f1": 0.690480065207603,
+      "classification_report": {
+        "Kids": {
+          "precision": 0.7912621359223301,
+          "recall": 0.8232323232323232,
+          "f1-score": 0.806930693069307,
+          "support": 198.0
+        },
+        "Teens": {
+          "precision": 0.6615186615186616,
+          "recall": 0.6104513064133017,
+          "f1-score": 0.6349598517603459,
+          "support": 842.0
+        },
+        "Mature": {
+          "precision": 0.6954261954261954,
+          "recall": 0.7392265193370166,
+          "f1-score": 0.7166577396893412,
+          "support": 905.0
+        },
+        "accuracy": 0.6920308483290488,
+        "macro avg": {
+          "precision": 0.7160689976223957,
+          "recall": 0.7243033829942137,
+          "f1-score": 0.7195160948396646,
+          "support": 1945.0
+        },
+        "weighted avg": {
+          "precision": 0.6905035078519492,
+          "recall": 0.6920308483290488,
+          "f1-score": 0.690480065207603,
+          "support": 1945.0
+        }
+      }
+    },
+    "labels": [
+      "Kids",
+      "Teens",
+      "Mature"
+    ],
+    "confusion_matrix": [
+      [
+        163,
+        29,
+        6
+      ],
+      [
+        41,
+        514,
+        287
+      ],
+      [
+        2,
+        234,
+        669
+      ]
+    ],
+    "top_importances": {
+      "genre_kids_tv": 0.2139,
+      "genre_children_and_family_movies": 0.1556,
+      "duration_minutes": 0.1363,
+      "release_year": 0.0563,
+      "n_genres": 0.049,
+      "country_freq": 0.0479,
+      "genre_international_tv_shows": 0.0343,
+      "genre_stand-up_comedy": 0.0272,
+      "year_added": 0.0264,
+      "genre_international_movies": 0.0255,
+      "n_seasons": 0.0243,
+      "genre_independent_movies": 0.0227,
+      "has_director": 0.0209,
+      "genre_dramas": 0.0199,
+      "n_countries": 0.0182
+    },
+    "feature_names": [
+      "is_movie",
+      "release_year",
+      "year_added",
+      "n_genres",
+      "n_countries",
+      "has_director",
+      "has_cast",
+      "duration_minutes",
+      "n_seasons",
+      "genre_dramas",
+      "genre_comedies",
+      "genre_documentaries",
+      "genre_action_and_adventure",
+      "genre_international_movies",
+      "genre_international_tv_shows",
+      "genre_children_and_family_movies",
+      "genre_thrillers",
+      "genre_crime_tv_shows",
+      "genre_kids_tv",
+      "genre_romantic_movies",
+      "genre_horror_movies",
+      "genre_stand-up_comedy",
+      "genre_tv_dramas",
+      "genre_tv_comedies",
+      "genre_independent_movies",
+      "genre_sci-fi_and_fantasy",
+      "genre_music_and_musicals",
+      "genre_reality_tv",
+      "genre_anime_series",
+      "country_freq"
+    ]
+  },
+  "clustering": {
+    "n_clusters": 4,
+    "n_fit": 4000,
+    "silhouette": 0.14513506568039788,
+    "ari_vs_rating_band": 0.04790052788972508,
+    "cluster_sizes": {
+      "0": 668,
+      "1": 1616,
+      "2": 1179,
+      "3": 537
+    },
+    "cluster_means_head": {
+      "0": {
+        "is_movie": 0.0,
+        "release_year": 2016.789,
+        "year_added": 2018.431,
+        "n_genres": 2.731,
+        "n_countries": 1.015,
+        "has_director": 0.1,
+        "has_cast": 0.922,
+        "duration_minutes": 0.0,
+        "n_seasons": 1.702,
+        "genre_dramas": 0.0,
+        "genre_comedies": 0.0,
+        "genre_documentaries": 0.0,
+        "genre_action_and_adventure": 0.0,
+        "genre_international_movies": 0.0,
+        "genre_international_tv_shows": 0.769,
+        "genre_children_and_family_movies": 0.0,
+        "genre_thrillers": 0.0,
+        "genre_crime_tv_shows": 0.334,
+        "genre_kids_tv": 0.0,
+        "genre_romantic_movies": 0.0,
+        "genre_horror_movies": 0.0,
+        "genre_stand-up_comedy": 0.0,
+        "genre_tv_dramas": 0.525,
+        "genre_tv_comedies": 0.213,
+        "genre_independent_movies": 0.0,
+        "genre_sci-fi_and_fantasy": 0.0,
+        "genre_music_and_musicals": 0.0,
+        "genre_reality_tv": 0.001,
+        "genre_anime_series": 0.007
+      },
+      "1": {
+        "is_movie": 1.0,
+        "release_year": 2012.137,
+        "year_added": 2018.637,
+        "n_genres": 2.616,
+        "n_countries": 1.242,
+        "has_director": 0.99,
+        "has_cast": 0.996,
+        "duration_minutes": 112.34,
+        "n_seasons": 0.0,
+        "genre_dramas": 0.649,
+        "genre_comedies": 0.374,
+        "genre_documentaries": 0.001,
+        "genre_action_and_adventure": 0.16,
+        "genre_international_movies": 0.67,
+        "genre_international_tv_shows": 0.0,
+        "genre_children_and_family_movies": 0.018,
+        "genre_thrillers": 0.129,
+        "genre_crime_tv_shows": 0.0,
+        "genre_kids_tv": 0.0,
+        "genre_romantic_movies": 0.173,
+        "genre_horror_movies": 0.03,
+        "genre_stand-up_comedy": 0.0,
+        "genre_tv_dramas": 0.0,
+        "genre_tv_comedies": 0.0,
+        "genre_independent_movies": 0.217,
+        "genre_sci-fi_and_fantasy": 0.034,
+        "genre_music_and_musicals": 0.053,
+        "genre_reality_tv": 0.0,
+        "genre_anime_series": 0.0
+      },
+      "2": {
+        "is_movie": 0.987,
+        "release_year": 2014.016,
+        "year_added": 2018.302,
+        "n_genres": 1.525,
+        "n_countries": 1.214,
+        "has_director": 0.941,
+        "has_cast": 0.819,
+        "duration_minutes": 81.423,
+        "n_seasons": 0.013,
+        "genre_dramas": 0.054,
+        "genre_comedies": 0.145,
+        "genre_documentaries": 0.344,
+        "genre_action_and_adventure": 0.088,
+        "genre_international_movies": 0.145,
+        "genre_international_tv_shows": 0.0,
+        "genre_children_and_family_movies": 0.197,
+        "genre_thrillers": 0.052,
+        "genre_crime_tv_shows": 0.0,
+        "genre_kids_tv": 0.0,
+        "genre_romantic_movies": 0.0,
+        "genre_horror_movies": 0.094,
+        "genre_stand-up_comedy": 0.131,
+        "genre_tv_dramas": 0.0,
+        "genre_tv_comedies": 0.0,
+        "genre_independent_movies": 0.009,
+        "genre_sci-fi_and_fantasy": 0.056,
+        "genre_music_and_musicals": 0.074,
+        "genre_reality_tv": 0.0,
+        "genre_anime_series": 0.0
+      },
+      "3": {
+        "is_movie": 0.0,
+        "release_year": 2015.767,
+        "year_added": 2018.484,
+        "n_genres": 1.765,
+        "n_countries": 1.026,
+        "has_director": 0.035,
+        "has_cast": 0.836,
+        "duration_minutes": 0.0,
+        "n_seasons": 1.879,
+        "genre_dramas": 0.0,
+        "genre_comedies": 0.0,
+        "genre_documentaries": 0.0,
+        "genre_action_and_adventure": 0.0,
+        "genre_international_movies": 0.0,
+        "genre_international_tv_shows": 0.171,
+        "genre_children_and_family_movies": 0.0,
+        "genre_thrillers": 0.0,
+        "genre_crime_tv_shows": 0.006,
+        "genre_kids_tv": 0.406,
+        "genre_romantic_movies": 0.0,
+        "genre_horror_movies": 0.0,
+        "genre_stand-up_comedy": 0.0,
+        "genre_tv_dramas": 0.009,
+        "genre_tv_comedies": 0.238,
+        "genre_independent_movies": 0.0,
+        "genre_sci-fi_and_fantasy": 0.0,
+        "genre_music_and_musicals": 0.0,
+        "genre_reality_tv": 0.201,
+        "genre_anime_series": 0.125
+      }
+    },
+    "rating_band_share_by_cluster": {
+      "0": {
+        "Kids": 0.009,
+        "Mature": 0.575,
+        "Teens": 0.416
+      },
+      "1": {
+        "Kids": 0.012,
+        "Mature": 0.487,
+        "Teens": 0.501
+      },
+      "2": {
+        "Kids": 0.141,
+        "Mature": 0.453,
+        "Teens": 0.406
+      },
+      "3": {
+        "Kids": 0.399,
+        "Mature": 0.242,
+        "Teens": 0.359
+      }
+    },
+    "note": "ARI vs rating_band is a weak external reference only \u2014 clusters are unsupervised genre/duration structure, not band predictors."
+  },
+  "coursework_themes": [
+    "missingness overview",
+    "Movies vs TV mix",
+    "titles added over time",
+    "release-year distribution",
+    "top countries (exploded)",
+    "rating \u00d7 type",
+    "top genres (exploded)",
+    "movie duration + TV seasons",
+    "release year vs movie minutes",
+    "rating-band prediction + content clustering (portfolio extension)"
+  ]
+}

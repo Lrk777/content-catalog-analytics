@@ -1,0 +1,7 @@
+{
+  "model_accuracy": 0.6920308483290488,
+  "baseline_accuracy": 0.4652956298200514,
+  "macro_f1": 0.7195160948396646,
+  "silhouette": 0.14513506568039788,
+  "n_rows_clean": 7787
+}

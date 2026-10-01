@@ -1,0 +1,26 @@
+seed: 42
+
+data:
+  raw_csv: data/raw/netflix_titles.csv
+  processed_csv: data/processed/titles_clean.csv
+  source_name: "TidyTuesday 2021-04-20 netflix_titles (Flixable / Kaggle Netflix Movies and TV Shows)"
+  source_url: "https://github.com/rfordatascience/tidytuesday/tree/master/data/2021/2021-04-20"
+
+analysis:
+  top_genres: 12
+  top_countries: 10
+  year_min: 2000
+
+model:
+  # Kids / Teens / Mature bands derived from content rating
+  test_size: 0.25
+  n_clusters: 4
+  rf:
+    n_estimators: 200
+    max_depth: 12
+    min_samples_leaf: 5
+  majority_baseline: true
+
+reports:
+  figures_dir: reports/figures
+  latest_dir: reports/latest
